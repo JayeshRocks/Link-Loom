@@ -1,3 +1,5 @@
+var googleScriptURL = "https://script.google.com/macros/s/AKfycbwkOS20ugHB_aBYCXkppNO-N5o3NbiTEJPWGdzMt8e9cEIpSPVxUfcajFoE0iVt5EwH/exec";
+
 <!DOCTYPE html>
 <html>
 
@@ -47,7 +49,7 @@
         var pathName = window.location.pathname;
         if (pathName == "/") {} else {
             pathInfo = pathName.replace("/","");
-            var newURL = "https://script.google.com/macros/s/AKfycbyjZNGd-Eu5J4_6mZnSbMCC_okAl-s5sUbL6-eWSiKiGSkBK3FlfISXh9NovPIejoBG/exec?" + pathInfo;
+            var newURL = googleScriptURL + "?" + pathInfo;
             window.open(newURL, '_top');
         }
     </script>
@@ -76,7 +78,7 @@
 </head>
 
 <body>
-    <iframe class="gas-frame" src="https://script.google.com/macros/s/AKfycbyjZNGd-Eu5J4_6mZnSbMCC_okAl-s5sUbL6-eWSiKiGSkBK3FlfISXh9NovPIejoBG/exec"></iframe>
+    <iframe class="gas-frame" src=googleScriptURL></iframe>
 <script>
     // Check compatibility for the browser we're running this in
 if ("serviceWorker" in navigator) {
