@@ -16,7 +16,6 @@
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
-        var googleScriptURL = "https://script.google.com/macros/s/AKfycbwkOS20ugHB_aBYCXkppNO-N5o3NbiTEJPWGdzMt8e9cEIpSPVxUfcajFoE0iVt5EwH/exec";
         // Single Page Apps for GitHub Pages
         // https://github.com/rafrex/spa-github-pages
         // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
@@ -50,7 +49,7 @@
         var pathName = window.location.pathname;
         if (pathName == "/") {} else {
             pathInfo = pathName.replace("/","");
-            var newURL = googleScriptURL + "?" + pathInfo;
+            var newURL = "https://script.google.com/macros/s/AKfycbwkOS20ugHB_aBYCXkppNO-N5o3NbiTEJPWGdzMt8e9cEIpSPVxUfcajFoE0iVt5EwH/exec?" + pathInfo;
             window.open(newURL, '_top');
         }
     </script>
@@ -79,7 +78,7 @@
 </head>
 
 <body>
-    <iframe class="gas-frame" src=googleScriptURL></iframe>
+    <iframe class="gas-frame" src="https://script.google.com/macros/s/AKfycbwkOS20ugHB_aBYCXkppNO-N5o3NbiTEJPWGdzMt8e9cEIpSPVxUfcajFoE0iVt5EwH/exec"></iframe>
 <script>
     // Check compatibility for the browser we're running this in
 if ("serviceWorker" in navigator) {
